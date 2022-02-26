@@ -254,12 +254,11 @@ body:not(.theme-preset-active) #page-sub-header p {
 
 /* service areas */
 #serviceAreas {
-  background: #c20e1a;
   color: #fff;
   padding-left: 120px;
+  margin-bottom: 40px;
 }
 #serviceAreas > .vce-row {
-  background: #5d96be;
   padding-right: 120px;
 }
 #serviceAreas .vce-col .vce-col-inner{
@@ -270,6 +269,9 @@ body:not(.theme-preset-active) #page-sub-header p {
 }
 #cmcServ {
   background: #c20e1a;
+}
+#cmcServ:hover {
+  background: #940a14
 }
 #cmcServ .vce.vce-single-image-wrapper {
   margin-bottom: 10px;
@@ -284,14 +286,26 @@ body:not(.theme-preset-active) #page-sub-header p {
 #nonclinServ {
   background: #d0661c;
 }
+#nonclinServ:hover {
+  background: #9b4d15;
+}
 #clinServ {
   background: #b1b1b0;
+}
+#clinServ:hover {
+  background: #7e7e7d;
 }
 #regServ {
   background: #585857;
 }
+#regServ:hover {
+  background: #2c2c2c;
+}
 #pmServ {
   background: #5d96be;
+}
+#pmServ:hover {
+  background: #436b88;
 }
  
 /* pitches */
@@ -301,7 +315,7 @@ body:not(.theme-preset-active) #page-sub-header p {
   padding-right: 120px;
 }
 .entry-content .pitch-row h2 {
-  margin-top: 60px;
+  margin-top: 40px;
   margin-bottom: 15px;
   font-size: 40px;
   color: #585857;

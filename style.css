@@ -351,7 +351,7 @@ body:not(.theme-preset-active) #page-sub-header p {
   margin-bottom: 25px;
 }
 
-/* posts */
+/* home posts */
 #homePosts {
   margin-top: 90px;
 }
@@ -498,7 +498,7 @@ color: #fff;
   background: #f2f2f2;
   align-items: center;
   height: 60px;
-  padding-right: 120px;
+  padding-right: 70px;
 }
 #xpertBar p {
   margin-bottom: 0;
@@ -516,6 +516,29 @@ color: #fff;
   right: 20px;
   padding-left: 5px;
   border: 1px solid #b1b1b0;
+}
+
+/* Posts */
+.single .post-thumbnail {
+  margin-left: 20px;
+  margin-bottom: 20px;
+  float: right;
+}
+.navigation.post-navigation {
+  max-width: 1340px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin: 0 auto;
+}
+.post-navigation .nav-previous a::before {
+  padding-right:3px;
+}
+
+.archive .entry-content {
+  display: flex;
+}
+.archive .entry-content .post-thumbnail {
+  margin-right: 20px;
 }
 /* Footer Styles */
 body:not(.theme-preset-active) footer#colophon {
@@ -535,8 +558,8 @@ footer#colophon .site-info:after {
 }
 footer#colophon .site-info .container,
 footer#colophon #footer-widget .container {
-  padding-left: 73px;
-  padding-right: 73px;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 footer#colophon .site-info .widget,
 footer#colophon #footer-widget {

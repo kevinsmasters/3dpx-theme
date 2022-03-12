@@ -10,9 +10,6 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<div class="post-thumbnail">
-		<?php the_post_thumbnail(); ?>
-	</div>
 	<header class="entry-header">
 		<?php
 		if ( is_single() ) :
@@ -29,11 +26,16 @@
 		endif; ?>
 	</header><!-- .entry-header -->
 	<div class="entry-content">
+		<div class="post-thumbnail">
+			<?php the_post_thumbnail(); ?>
+		</div>
 		<?php
         if ( is_single() ) :
 			the_content();
         else :
+			echo("<div class='post-excerpt'>");
             the_excerpt( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'wp-bootstrap-starter' ) );
+			echo("</div>");
         endif;
 
 			wp_link_pages( array(

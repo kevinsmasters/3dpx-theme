@@ -14,7 +14,7 @@
     $enable_vc = get_post_meta(get_the_ID(), '_wpb_vc_js_status', true);
     if(!$enable_vc ) {
     ?>
-    <header class="entry-header" <?php if(has_header_image()) { ?>style="background-image: url('<?php header_image(); ?>');" <?php } ?>>
+    <header class="entry-header" <?php if(has_header_image()) { ?>style="background-image: url('<?php header_image(); ?>');" <?php } ?>><!-- use featured image -->
 		
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 		

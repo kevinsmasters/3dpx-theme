@@ -95,6 +95,16 @@ header#masthead #navs {
 /* Top Navigation Styles */
 
 /* dropdown nav links on hover */
+.dropdown-menu {
+  transition: all .25s;
+  overflow: hidden;
+  transform-origin: top center;
+  transform: scale(1,0);
+  display: block;
+}
+.dropdown:hover .dropdown-menu {
+  transform: scale(1);
+}
 .navbar-nav > li:hover > .dropdown-menu {
     display: block;
     top: 69px;
@@ -418,7 +428,7 @@ body:not(.theme-preset-active) #page-sub-header p {
 .page #content.site-content {
   padding-top: 0;
 }
-.page .entry-header {
+body:not(.search-results) .page .entry-header {
   background: #000;
   position: relative;
   padding-top: 4.5rem;
@@ -431,8 +441,8 @@ body:not(.theme-preset-active) #page-sub-header p {
   max-width: 100%;
 }
 
-.page .entry-title,
-.page .entry-header p {
+body:not(.search-results) .page .entry-title,
+body:not(.search-results)  .page .entry-header p {
   color: #fff;
   max-width: 33rem;
 }
@@ -599,17 +609,17 @@ footer#colophon a.nav-link {
 }
 /* sidebar */
 #secondary {
-  max-width: 18rem;
+  max-width: 15rem;
   position: relative;
   z-index: 500;
-  margin-top: -18rem;
+  margin-top: -14.59rem;
 }
 #secondary section {
   padding: 1.5rem;
   background: #f2f2f2;
 }
 #secondary section h3 {
-  font-size: 28px;
+  font-size: 22px;
   color: #c20e1a;
 }
 #secondary section ul.menu li {
@@ -618,8 +628,14 @@ footer#colophon a.nav-link {
 #secondary section ul.menu li a {
   background: #fff;
   color: #585857;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 900;
+}
+
+/* Search */
+.search .entry-summary {
+  max-width: 1140px;
+  margin: 1.5em auto;
 }
 /* Responsive Rules */
 @media (max-width: 1361px) {

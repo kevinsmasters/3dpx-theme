@@ -38,14 +38,20 @@ a:hover {
   color: #183367;
   text-decoration: none;
 }
-
+.container-fluid {
+  max-width: 1600px;
+}
+.header-inner {
+  max-width: 1600px;
+  margin: 0 auto;
+}
 /* Header Styles */
 header#masthead {
   background-color: #fff;
   padding-top: 0;
   padding-bottom: 0;
-  padding-left: 55px;
-  padding-right: 55px;
+  padding-left: 105px;
+  padding-right: 105px;
 }
 #masthead nav.navbar {
   align-items: flex-start;
@@ -162,6 +168,8 @@ body:not(.theme-preset-active) #masthead #header-nav .navbar-nav > li > a:hover 
 .contain-width {
   padding-left: 120px;
   padding-right: 120px;
+  margin: 0 auto;
+  max-width: 1600px;
 }
 /* Home */
 
@@ -323,6 +331,8 @@ body:not(.theme-preset-active) #page-sub-header p {
   background: #f2f2f2;
   padding-left: 120px;
   padding-right: 120px;
+  margin: 0 auto;
+  max-width: 1600px;
 }
 .entry-content .pitch-row h2 {
   margin-top: 40px;
@@ -433,6 +443,7 @@ body:not(.search-results) .page .entry-header {
   position: relative;
   padding-top: 4.5rem;
   padding-left: 120px;
+  padding-right: 120px;
   padding-bottom: 3.5rem;
   text-align: left;
   font-size: 1.25rem;
@@ -476,14 +487,18 @@ color: #fff;
 
 }
 
-.page #bodyContent {
+.page #bodyContent,
+.error404 #bodyContent {
   display: grid;
   grid-template-columns: 1fr auto;
   grid-template-rows: 1fr;
   padding-left: 120px;
   padding-right: 120px;
+  max-width: 1600px;
+  margin: 0 auto;
 }
-.page #bodyContent .entry-content {
+.page #bodyContent .entry-content,
+.error404 #bodyContent .entry-content {
   padding-top: 4.5rem;
   padding-right: 4.5rem;
 }
@@ -508,7 +523,7 @@ color: #fff;
   background: #f2f2f2;
   align-items: center;
   height: 60px;
-  padding-right: 70px;
+  padding-right: 120px;
 }
 #xpertBar p {
   margin-bottom: 0;
@@ -570,6 +585,8 @@ footer#colophon .site-info .container,
 footer#colophon #footer-widget .container {
   padding-left: 25px;
   padding-right: 25px;
+  max-width: 1340px;
+  margin: 0 auto;
 }
 footer#colophon .site-info .widget,
 footer#colophon #footer-widget {
@@ -610,6 +627,8 @@ footer#colophon a.nav-link {
 /* sidebar */
 #secondary {
   max-width: 15rem;
+}
+body:not(.error404) #secondary {
   position: relative;
   z-index: 500;
   margin-top: -14.59rem;

@@ -15,10 +15,12 @@
     if(!$enable_vc ) {
     ?>
     <header class="entry-header" <?php if(has_header_image()) { ?>style="background-image: url('<?php header_image(); ?>');" <?php } ?>><!-- use featured image -->
+		<div class="header-inner">
+			<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+			
+			<p><?php echo get_post_meta($post->ID, 'hero_text', true); ?></p>
+		</div>
 		
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-		
-		<p><?php echo get_post_meta($post->ID, 'hero_text', true); ?></p>
 	</header><!-- .entry-header -->
     <?php } ?>
 

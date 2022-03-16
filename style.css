@@ -171,7 +171,7 @@ body:not(.theme-preset-active) #masthead #header-nav .navbar-nav > li > a:hover 
   max-width: 1600px;
 }
 /* Home */
-
+/* TODO: FIX THIS IN WP_TEMPLATE */
 .home .entry-header { 
   display: none;
 }
@@ -459,6 +459,190 @@ body:not(.search-results)  .page .entry-header p {
   color: #fff;
   max-width: 33rem;
 }
+
+/* every page hero header */
+.tile {
+  position: relative;
+  overflow: hidden;
+}
+.banner-tile {
+  min-height: 31.25rem;
+  position: relative;
+  margin-bottom: 1.625rem;
+}
+.banner-tile__bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #ccc;
+}
+.banner-tile__bg img {
+  display: block;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+}
+.grid-container {
+  /* padding-right: 0.625rem;
+  padding-left: 0.625rem;
+  max-width: 76.5rem;
+  margin-left: auto;
+  margin-right: auto; */
+}
+.grid-container {
+  /* padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  max-width: 82.5rem; */
+}
+@media print, screen and (min-width: 80em) {
+  .grid-container {
+      /* padding-left: 3rem;
+      padding-right: 3rem; */
+  }
+}
+@media print, screen and (min-width: 45em){
+  .grid-container {
+      /* padding-right: 0.75rem;
+      padding-left: 0.75rem; */
+  }
+}
+@media print, screen and (min-width: 45em) {
+  .grid-container {
+    /* padding-left: 1.75rem;
+    padding-right: 1.75rem; */
+  }
+}
+.grid-x, .product-list-search-form [data-drupal-selector="edit-filters-wrapper"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+.grid-container:not(.full)>.grid-padding-x, 
+.product-list-search-form .grid-container:not(.full)>[data-drupal-selector="edit-filters-wrapper"] {
+  margin-right: -0.625rem;
+  margin-left: -0.625rem;
+}
+@media print, screen and (min-width: 45em){
+  .grid-container:not(.full)>.grid-padding-x, 
+  .product-list-search-form .grid-container:not(.full)>[data-drupal-selector="edit-filters-wrapper"] {
+    margin-right: -0.75rem;
+    margin-left: -0.75rem;
+  }
+}
+.grid-padding-x>.cell, 
+.product-list-search-form [data-drupal-selector="edit-filters-wrapper"]>.cell, 
+.product-list-search-form .grid-padding-x>.fieldgroup, 
+.product-list-search-form [data-drupal-selector="edit-filters-wrapper"]>.fieldgroup, 
+.product-list-search-form .grid-padding-x>[data-drupal-selector="edit-link"], 
+.product-list-search-form [data-drupal-selector="edit-filters-wrapper"]>[data-drupal-selector="edit-link"] {
+  padding-right: 0.625rem;
+  padding-left: 0.625rem;
+}
+.cell, .product-list-search-form .fieldgroup, .product-list-search-form [data-drupal-selector="edit-link"] {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  min-height: 0;
+  min-width: 0;
+  width: 100%;
+}
+@media print, screen and (min-width: 45em){
+  .grid-padding-x>.cell, 
+  .product-list-search-form [data-drupal-selector="edit-filters-wrapper"]>.cell, 
+  .product-list-search-form .grid-padding-x>.fieldgroup, 
+  .product-list-search-form [data-drupal-selector="edit-filters-wrapper"]>.fieldgroup, 
+  .product-list-search-form .grid-padding-x>[data-drupal-selector="edit-link"], 
+  .product-list-search-form [data-drupal-selector="edit-filters-wrapper"]>[data-drupal-selector="edit-link"] {
+      padding-right: 0.75rem;
+      padding-left: 0.75rem;
+  }
+}
+@media print, screen and (min-width: 45em){
+  .grid-x>.medium-8, 
+  .product-list-search-form [data-drupal-selector="edit-filters-wrapper"]>.medium-8 {
+    width: 66.66667%;
+  }
+}
+@media print, screen and (min-width: 45em){
+.grid-x>.medium-shrink, .product-list-search-form [data-drupal-selector="edit-filters-wrapper"]>.medium-shrink, .grid-x>.medium-full, .product-list-search-form [data-drupal-selector="edit-filters-wrapper"]>.medium-full, .grid-x>.medium-1, .product-list-search-form [data-drupal-selector="edit-filters-wrapper"]>.medium-1, .grid-x>.medium-2, .product-list-search-form [data-drupal-selector="edit-filters-wrapper"]>.medium-2, .grid-x>.medium-3, .product-list-search-form [data-drupal-selector="edit-filters-wrapper"]>.medium-3, .grid-x>.medium-4, .product-list-search-form [data-drupal-selector="edit-filters-wrapper"]>.medium-4, .grid-x>.medium-5, .product-list-search-form [data-drupal-selector="edit-filters-wrapper"]>.medium-5, .grid-x>.medium-6, .product-list-search-form [data-drupal-selector="edit-filters-wrapper"]>.medium-6, .product-list-search-form .grid-x>.fieldgroup, .product-list-search-form [data-drupal-selector="edit-filters-wrapper"]>.fieldgroup, .grid-x>.medium-7, .product-list-search-form [data-drupal-selector="edit-filters-wrapper"]>.medium-7, .grid-x>.medium-8, .product-list-search-form [data-drupal-selector="edit-filters-wrapper"]>.medium-8, .grid-x>.medium-9, .product-list-search-form [data-drupal-selector="edit-filters-wrapper"]>.medium-9, .grid-x>.medium-10, .product-list-search-form [data-drupal-selector="edit-filters-wrapper"]>.medium-10, .grid-x>.medium-11, .product-list-search-form [data-drupal-selector="edit-filters-wrapper"]>.medium-11, .grid-x>.medium-12, .product-list-search-form [data-drupal-selector="edit-filters-wrapper"]>.medium-12 {
+    -ms-flex-preferred-size: auto;
+    flex-basis: auto;
+}}
+@media print, screen and (min-width: 45em){
+.grid-x>.medium-shrink, .product-list-search-form [data-drupal-selector="edit-filters-wrapper"]>.medium-shrink, .grid-x>.medium-1, .product-list-search-form [data-drupal-selector="edit-filters-wrapper"]>.medium-1, .grid-x>.medium-2, .product-list-search-form [data-drupal-selector="edit-filters-wrapper"]>.medium-2, .grid-x>.medium-3, .product-list-search-form [data-drupal-selector="edit-filters-wrapper"]>.medium-3, .grid-x>.medium-4, .product-list-search-form [data-drupal-selector="edit-filters-wrapper"]>.medium-4, .grid-x>.medium-5, .product-list-search-form [data-drupal-selector="edit-filters-wrapper"]>.medium-5, .grid-x>.medium-6, .product-list-search-form [data-drupal-selector="edit-filters-wrapper"]>.medium-6, .product-list-search-form .grid-x>.fieldgroup, .product-list-search-form [data-drupal-selector="edit-filters-wrapper"]>.fieldgroup, .grid-x>.medium-7, .product-list-search-form [data-drupal-selector="edit-filters-wrapper"]>.medium-7, .grid-x>.medium-8, .product-list-search-form [data-drupal-selector="edit-filters-wrapper"]>.medium-8, .grid-x>.medium-9, .product-list-search-form [data-drupal-selector="edit-filters-wrapper"]>.medium-9, .grid-x>.medium-10, .product-list-search-form [data-drupal-selector="edit-filters-wrapper"]>.medium-10, .grid-x>.medium-11, .product-list-search-form [data-drupal-selector="edit-filters-wrapper"]>.medium-11, .grid-x>.medium-12, .product-list-search-form [data-drupal-selector="edit-filters-wrapper"]>.medium-12 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+}}
+@media print, screen and (min-width: 45em){
+.medium-offset-2 {
+    margin-left: 120px;
+}}
+@media print, screen and (min-width: 80em){
+.banner-tile__content {
+    padding: 8.125rem 0;
+    min-height: 44.375rem;
+}}
+@media print, screen and (min-width: 45em){
+.banner-tile__content {
+    padding: 7.5rem 0;
+}}
+.banner-tile__content {
+  padding: 3.375rem 0;
+  min-height: 31.25rem;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  text-align: center;
+}
+.banner-tile__headline {
+  color: #fff;
+  word-wrap: break-word;
+  text-align: left;
+  font-size: 2.1rem;
+  margin-bottom: 2.3rem;
+  max-width: 33rem;
+}
+.banner-tile__desc {
+  color: #fff;
+  text-align: left;
+  font-size: 1.25rem;
+  max-width: 33rem;
+}
+@media print, screen and (min-width: 80em){
+.banner-tile__desc {
+    font-size: 1.5rem;
+}}
+.banner-tile__cta {
+  margin: 1.75rem 0 0 0;
+}
+/* -- */
 
 #content.site-content {
   padding-top: 2.3rem;

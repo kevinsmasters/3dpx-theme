@@ -12,6 +12,7 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 <?php
 if ( !is_front_page() ) : ?>
+<div id="page-sub-wrap">
 <div class="DJ__BannerTile__processed banner-tile tile color-black analytics-container" data-title="Homepage Banner - Hope Changes Lives">
    <div class="banner-tile__bg">
 	   <picture>
@@ -36,21 +37,8 @@ if ( !is_front_page() ) : ?>
 		</div>
 	</div>
 </div>
+</div>
 <?php endif; ?>
-
-	<?php
-    $enable_vc = get_post_meta(get_the_ID(), '_wpb_vc_js_status', true);
-    if(!$enable_vc ) {
-    ?>
-    <header class="entry-header" <?php if(has_header_image()) { ?>style="background-image: url('<?php header_image(); ?>');" <?php } ?>><!-- use featured image -->
-		<div class="header-inner">
-			<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-			
-			<p><?php echo get_post_meta($post->ID, 'hero_text', true); ?></p>
-		</div>
-		
-	</header><!-- .entry-header -->
-    <?php } ?>
 
 	<div id="bodyContent">
 	<div class="entry-content">

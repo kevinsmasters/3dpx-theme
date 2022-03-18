@@ -864,7 +864,7 @@ body:not(.error404) #secondary {
     height: 60px;
   }
 }
-@media (max-width: 1295px) {
+@media (max-width: 1305px) {
   .navbar-brand img {
     height: 50px;
   }
@@ -913,6 +913,12 @@ body:not(.error404) #secondary {
     display: none;
   }
 
+  body:not(.theme-preset-active) #masthead .navbar-nav > li > a, body:not(.theme-preset-active) #masthead .navbar-nav > li.current_page_item > a {
+    height: auto;
+  }
+  .dropdown-menu {
+    transform: none;
+  }
 
   header#masthead,
   #masthead .container-fluid {
@@ -989,13 +995,30 @@ body:not(.error404) #secondary {
     font-size: 2.3rem;
   }
 
+  .page #bodyContent, .error404 #bodyContent {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto;
+  }
+  #secondary {
+    max-width: 100%;
+    position: static;
+  }
+  
+  body:not(.error404) #secondary {
+    margin-top: 20px;
+  }
+  #secondary > img {
+    display: none;
+  }
 }
 
 @media (max-width: 896px) {
-  body:not(.theme-preset-active) #page-sub-header h1 {
+  body:not(.theme-preset-active) #page-sub-header h1,
+  .home #page-sub-wrap .banner-tile__headline {
     font-size: 2.6rem;
   }
-  body:not(.theme-preset-active) #page-sub-header p {
+  body:not(.theme-preset-active) #page-sub-header p,
+  .home #page-sub-wrap .banner-tile__desc {
     font-size: 1.4rem;
     max-width: 42rem;
   }
@@ -1029,9 +1052,9 @@ body:not(.error404) #secondary {
     justify-content: normal;
   }
 }
-
 @media (max-width: 667px) {
-  body:not(.theme-preset-active) #page-sub-header h1 {
+  body:not(.theme-preset-active) #page-sub-header h1,
+  .home #page-sub-wrap .banner-tile__headline {
     font-size: 2rem;
   }
   #howHelp .vce-col--xs-1 {
@@ -1057,6 +1080,14 @@ body:not(.error404) #secondary {
     font-size: 1.2rem;
   }
 }
+@media (max-width: 414px) { 
+  .banner-tile__content {
+    padding: 2rem;
+  }
+  #howHelp .vce-row-equal-height>.vce-row-content {
+    flex-direction: column;
+  }
+}
 
 @media (max-width: 390px) {
   html[lang=en-US] { margin-top: 0!important;}
@@ -1072,11 +1103,6 @@ body:not(.error404) #secondary {
         text-align: center;
     }
 
-   
-    .navbar-light .navbar-toggler-icon {
-        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
-
-    }
     body:not(.theme-preset-active) #masthead #header-nav .navbar-nav > li > a {
       font-size: 9px;
     }

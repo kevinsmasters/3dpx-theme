@@ -1080,6 +1080,30 @@ body:not(.error404) #secondary {
     font-size: 1.2rem;
   }
 }
+@media (max-width: 540px) {
+  .page #bodyContent, .error404 #bodyContent,
+  .single article.post,
+  .archive #content {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  #barWrap {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  #xpertBar {
+    flex-direction: column;
+    height: 70px;
+    padding-bottom: .8em;
+  }
+  #xpertBar input.search-text {
+    width: 350px;
+  }
+  .single .post-thumbnail {
+    margin-left: 0;
+    float: none;
+  }
+}
 @media (max-width: 414px) { 
   .banner-tile__content {
     padding: 2rem;

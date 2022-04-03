@@ -3,13 +3,13 @@
 if ( is_active_sidebar( 'footer-1' ) || is_active_sidebar( 'footer-2' ) || is_active_sidebar( 'footer-3' ) || is_active_sidebar( 'footer-4' ) || is_active_sidebar( 'footer-5' ) ) {?>
         <div id="footer-widget" class="row m-0">
             <div class="container">
-                <div class="row"><?php // TODO: CHANGE THIS TO FLEX ?>
-                    <div class="col col-md-3">
+                <div class="row">
+                    <div class="col col-12 col-md-3">
                         <?php if ( is_active_sidebar( 'footer-1' )) : ?>
                             <div class="widget-col footer-1"><?php dynamic_sidebar( 'footer-1' ); ?></div>
                         <?php endif; ?>
                     </div>
-                    <div class="col col-md-8 offset-md-1">
+                    <div class="col col-12 col-md-8 offset-md-1">
                         <?php if ( is_active_sidebar( 'footer-2' )) : ?>
                             <div class="widget-col footer-2"><?php dynamic_sidebar( 'footer-2' ); ?></div>
                         <?php endif; ?>

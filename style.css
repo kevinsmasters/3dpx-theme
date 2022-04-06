@@ -47,12 +47,13 @@ header#masthead {
   background-color: #fff;
   padding-top: 0;
   padding-bottom: 0;
-  padding-left: 70px;
-  padding-right: 70px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 #masthead nav.navbar {
   align-items: flex-start;
   max-width: 1600px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 body:not(.theme-preset-active) #masthead .navbar-nav > li > a,
@@ -165,10 +166,10 @@ body:not(.theme-preset-active) #masthead #header-nav .navbar-nav > li > a:hover 
 }
 
 .contain-width {
-  padding-left: 120px;
-  padding-right: 120px;
-  margin: 0 auto;
-  max-width: 1600px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: 0 auto!important;
+  max-width: 1280px;
 }
 /* Home */
 /* TODO: FIX THIS IN WP_TEMPLATE */
@@ -278,11 +279,12 @@ body:not(.theme-preset-active) #page-sub-header p,
 /* service areas */
 #serviceAreas {
   color: #fff;
-  padding-left: 120px;
-  margin-bottom: 40px;
+  padding-left: 0;
+  margin: 0 auto 40px;
+  max-width: 1280px;
 }
 #serviceAreas > .vce-row {
-  padding-right: 120px;
+  padding-right: 0;
 }
 #serviceAreas .vce-col .vce-col-inner{
   display: flex;
@@ -301,7 +303,7 @@ body:not(.theme-preset-active) #page-sub-header p,
   margin-top: 20px;
 }
 #cmcServ .vce {
-  margin-bottom: 7px;
+  margin-bottom: 20px;
 }
 #cmcServ .vce p {
   margin-bottom: 0;
@@ -399,6 +401,7 @@ body:not(.theme-preset-active) #page-sub-header p,
 }
 #homePosts .wp-show-posts-image {
   grid-area: img;
+  text-align: right;
 }
 #homePosts .wp-show-posts-entry-header {
   grid-area: header;
@@ -624,8 +627,9 @@ body:not(.search-results)  .page .entry-header p {
   text-align: center;
   margin: 0 auto;
   max-width: 1600px;
-  padding-left: 120px;
-  padding-right: 120px;
+  max-width: 1280px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 .banner-tile__headline {
   color: #fff;
@@ -665,7 +669,7 @@ h1.entry-title {
 body:not(.home) .entry-content,
 .entry-header,
 .entry-footer {
-    max-width: 1140px;
+    max-width: 1280px;
     margin: 0 auto;
 }
 .entry-meta,
@@ -684,9 +688,10 @@ color: #fff;
   display: grid;
   grid-template-columns: 1fr auto;
   grid-template-rows: 1fr;
-  padding-left: 120px;
-  padding-right: 120px;
+  padding-left: 0;
+  padding-right: 0;
   max-width: 1600px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 .page #bodyContent .entry-content,
@@ -719,8 +724,8 @@ color: #fff;
   align-items: center;
   height: 60px;
   /* padding-right: 120px; */
-  max-width: 1600px;
-  margin: 0 auto;
+  max-width: 1280px;
+  margin: 0 auto!important;
 }
 #xpertBar p {
   margin-bottom: 0;
@@ -780,8 +785,10 @@ footer#colophon .site-info:after {
 }
 footer#colophon .site-info .widget-col section,
 footer#colophon #footer-widget {
-  padding-left: 70px;
-  padding-right: 70px;
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0 auto!important;
+  max-width: 1280px;
 }
 footer#colophon .site-info .container,
 footer#colophon #footer-widget .container {
@@ -855,7 +862,11 @@ body:not(.error404) #secondary {
 
 /* Search */
 .search .entry-summary {
-  max-width: 1140px;
+  max-width: 1280px;
+  margin: 1.5em auto;
+}
+.search-no-results #content {
+  max-width: 1280px;
   margin: 1.5em auto;
 }
 /* Responsive Rules */

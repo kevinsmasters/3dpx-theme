@@ -201,8 +201,8 @@ body:not(.theme-preset-active) #masthead #header-nav .navbar-nav > li > a:hover 
   background-size: cover !important;
   height: calc(100vw / 2.91);
 }
-#page-sub-wrap:after,
-#page-sub-wrap:before {
+body:not(.home) #page-sub-wrap:after,
+body:not(.home) #page-sub-wrap:before {
   content: " ";
   display: block;
   height: 4px;
@@ -292,45 +292,51 @@ body:not(.theme-preset-active) #page-sub-header p,
   padding: 5px;
   justify-content: flex-end;
 }
+#serviceAreas .vce {
+  margin-bottom: 20px;
+}
 #cmcServ {
-  background: #c20e1a;
+  background: #ed1c24;
 }
 #cmcServ:hover {
-  background: #940a14
+  background: #ad151a
 }
 #cmcServ .vce.vce-single-image-wrapper {
   margin-bottom: 10px;
+  margin-top: 20px;
+}
+#cmcServ .vce-single-image--align-center {
   margin-top: 20px;
 }
 #cmcServ .vce {
   margin-bottom: 20px;
 }
 #cmcServ .vce p {
-  margin-bottom: 0;
+  margin-bottom: 20px;
 }
 #nonclinServ {
-  background: #d0661c;
+  background: #f35c19;
 }
 #nonclinServ:hover {
-  background: #9b4d15;
+  background: #bc4816;
 }
 #clinServ {
-  background: #b1b1b0;
+  background: #a8a6a6;
 }
 #clinServ:hover {
-  background: #7e7e7d;
+  background: #686666;
 }
 #regServ {
-  background: #585857;
+  background: #479ac3;
 }
 #regServ:hover {
-  background: #2c2c2c;
+  background: #2b5d77;
 }
 #pmServ {
-  background: #5d96be;
+  background: #273d4c;
 }
 #pmServ:hover {
-  background: #436b88;
+  background: #15212a;
 }
  
 /* pitches */
@@ -635,14 +641,14 @@ body:not(.search-results)  .page .entry-header p {
   color: #fff;
   word-wrap: break-word;
   text-align: left;
-  font-size: 2.1rem;
-  margin-bottom: 2.3rem;
+  font-size: 3rem;
+  margin-bottom: 0;
   max-width: 33rem;
 }
 .banner-tile__desc {
   color: #fff;
   text-align: left;
-  font-size: 1.25rem;
+  font-size: 1.8rem;
   max-width: 33rem;
 }
 @media print, screen and (min-width: 80em){
@@ -665,6 +671,9 @@ h1.entry-title {
 }
 .single-post h1.entry-title {
   margin-bottom: 2.3rem;
+}
+body:not(.home) .entry-content {
+  padding-top: 40px;
 }
 body:not(.home) .entry-content,
 .entry-header,

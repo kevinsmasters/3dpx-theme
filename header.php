@@ -128,8 +128,9 @@
 	</header><!-- #masthead -->
     <?php if(is_front_page() && !get_theme_mod( 'header_banner_visibility' )): ?>
         <div id="page-sub-wrap">
-        <div class="DJ__BannerTile__processed banner-tile tile color-black analytics-container" data-title="Homepage Banner - Hope Changes Lives">
-            <div class="banner-tile__bg">
+        <?php echo do_shortcode( '[sample-shortcode]' ); ?>
+        <? /*<div class="DJ__BannerTile__processed banner-tile tile color-black analytics-container" data-title="Homepage Banner - Hope Changes Lives">
+       <div class="banner-tile__bg">
                 <picture>
                     <source media="(min-width: 1920px)" srcset="">
                     <source media="(min-width: 1281px) and (max-width: 1920px)" 
@@ -139,7 +140,8 @@
                     <img <?php if(has_header_image()) { ?>src="<?php header_image(); ?>" <?php } else { ?>
                         src="https://placeimg.com/1440/710/any" <?php } ?>
                         width="100%" height="auto" alt="Hope Changes Lives">
-                </picture>
+                </picture> 
+                
             </div>
             <div class="grid-container">
                 <div class="grid-x grid-padding-x">
@@ -166,8 +168,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
+            </div> 
+        </div>*/ ?>
 
         </div>
     <?php endif; ?>

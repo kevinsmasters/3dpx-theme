@@ -292,6 +292,10 @@ body:not(.theme-preset-active) #page-sub-header p,
   padding: 5px;
   justify-content: flex-end;
 }
+#serviceAreas .vce-col-content {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 #serviceAreas .vce {
   margin-bottom: 20px;
 }
@@ -333,7 +337,7 @@ body:not(.theme-preset-active) #page-sub-header p,
   background: #2b5d77;
 }
 #pmServ {
-  background: #273d4c;
+  background: #374954;
 }
 #pmServ:hover {
   background: #15212a;
@@ -680,6 +684,7 @@ body:not(.home) .entry-content,
 .entry-footer {
     max-width: 1280px;
     margin: 0 auto;
+    width: 100%;
 }
 .entry-meta,
 footer.entry-footer {
@@ -849,7 +854,7 @@ footer#colophon a.nav-link {
 body:not(.error404) #secondary {
   position: relative;
   z-index: 500;
-  margin-top: -14.59rem;
+  margin-top: -14.96rem;
 }
 #secondary section {
   padding: 1.5rem;

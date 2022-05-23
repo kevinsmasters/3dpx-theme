@@ -132,6 +132,27 @@ jQuery(function($) {
         console.log('cookie size:' + sizeCookie)
         document.getElementsByTagName("HTML")[0].style.fontSize = sizeCookie +"%";
       }
+
+      // news page category switcher 
+      $('.cat-input input').on('change', function(){
+        console.log($(this).val());
+        if($(this).val() == 'all') {
+          // show all
+          $('article.wp-show-posts-single').show();
+        } else {
+          // hide all
+          // show articles that match 
+          let catname = 'category-' + $(this).val();
+          console.log(catname);
+          $('article.wp-show-posts-single').show();
+          $('article.wp-show-posts-single').each(function() {
+            if(!$(this).hasClass(catname)) {
+              $(this).hide();
+            }
+          })
+        }
+
+      })
     });
 
     // Run the script once the window finishes loading

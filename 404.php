@@ -19,7 +19,7 @@ get_header(); ?>
 			<div id="bodyContent">
 				<div class="entry-content">
 					<p><?php esc_html_e( 'You may find what you are looking for in the menu above.', 'wp-bootstrap-starter' ); ?></p>
-					<p><a class="btn">Go to the homepage</a> <a class="btn">Contact us</a></p>
+					<p><a class="btn" href="/">Go to the homepage</a> <a href="/contact-us/" class="btn">Contact us</a></p>
 					<?php
 						//get_search_form();
 

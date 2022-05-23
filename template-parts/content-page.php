@@ -59,6 +59,7 @@ if ( !is_front_page() ) : ?>
 
 	<div id="bodyContent">
 	<div class="entry-content">
+	<?php if (function_exists('the_breadcrumb')) the_breadcrumb(); ?>
 		<?php
 			the_content();
 

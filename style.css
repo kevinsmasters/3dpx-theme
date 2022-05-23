@@ -797,7 +797,17 @@ h1.entry-title {
   margin-bottom: 2.3rem;
 }
 body:not(.home) .entry-content {
-  padding-top: 40px;
+  padding-top: 20px;
+}
+#RCrumbs {
+  padding-bottom: 20px;
+  color: #9f9f9b;
+}
+#RCrumbs a {
+  color: #9f9f9b;
+}
+#RCrumbs a:hover {
+  color: #575755;
 }
 body:not(.home) .entry-content,
 .entry-header,
@@ -816,6 +826,55 @@ footer.entry-footer {
   color: #fff;
 }
 
+/* News and Insights page */
+#wpsp-346 .post.hentry {
+  margin-bottom: 0;
+}
+#wpsp-346 .wp-show-posts-entry-header {
+  margin-bottom: 0;
+}
+.entry-content #wpsp-346 h2 {
+  font-size: 30px;
+}
+
+#wpsp-346 a.wp-show-posts-read-more, 
+#wpsp-346 a.wp-show-posts-read-more:visited,
+#wpsp-346 a.wp-show-posts-read-more:hover {
+  display: inline;
+  background: none;
+  padding: 0;
+  border: none;
+  color: #d0661c;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-weight: bold;
+}
+#news-nav {
+  padding-left: 0;
+}
+#news-nav ul {
+  border-right: 1px solid #e2e2e2;
+}
+.cat-input {
+  border: 1px solid #e2e2e2;
+  border-right: none;
+}
+.cat-input input {
+  display: none;
+}
+.cat-input label {
+  padding: 5px 10px;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+.cat-input label:hover {
+  background: #f9f9f9;
+}
+.cat-input input:checked + label {
+  color: #e20514;
+  background: #f9f9f9;
+}
 body:not(.home) .page #bodyContent,
 .error404 #bodyContent {
   display: grid;
@@ -970,6 +1029,9 @@ footer#colophon a.nav-link {
 /* sidebar */
 #secondary {
   max-width: 15rem;
+}
+#secondary > a > img {
+  max-width: 100%;
 }
 body:not(.error404) #secondary {
   position: relative;

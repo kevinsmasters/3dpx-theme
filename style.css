@@ -269,14 +269,14 @@ body:not(.theme-preset-active) #masthead #header-nav .navbar-nav > li > a:hover 
   background-size: cover !important;
   height: calc(100vw / 2.91);
 }
-/*body:not(.home) #page-sub-wrap:after,
+body:not(.home) #page-sub-wrap:after,
 body:not(.home) #page-sub-wrap:before {
   content: " ";
   display: block;
   height: 4px;
   background: rgb(194,14,26);
   background: linear-gradient(90deg, rgba(194,14,26,1) 0%, rgba(207,103,31,1) 38%, rgba(94,150,189,1) 100%);
-}*/
+}
 #page-sub-header {
   padding-left: 70px;
   padding-right: 70px;
@@ -438,9 +438,9 @@ body:not(.theme-preset-active) #page-sub-header p,
 }
 .pitch-row button.vce-button--style-basic.vce-button--style-basic--size-medium,
 .pitch-row a.vce-button {
-  font-size: 22px;
-  font-weight: 900;
-  padding: 5px 10px;
+  font-size: 26px;
+  font-weight: 800;
+  padding: 10px;
   margin-top: 5px;
   margin-bottom: 25px;
 }
@@ -454,9 +454,9 @@ body:not(.theme-preset-active) #page-sub-header p,
 }
 #mission button,
 #mission .vce-button {
-  font-size: 22px;
-  font-weight: 900;
-  padding: 5px 10px;
+  font-size: 26px;
+  font-weight: 800;
+  padding: 10px;
   margin-top: 5px;
   margin-bottom: 25px;
 }
@@ -529,9 +529,9 @@ body:not(.theme-preset-active) #page-sub-header p,
 }
 #newsButton button,
 #newsButton .vce-button {
-  font-size: 22px;
-  font-weight: 900;
-  padding: 5px 10px;
+  font-size: 26px;
+  font-weight: 800;
+  padding: 10px;
   margin-top: 5px;
   margin-bottom: 0;
 }
@@ -584,28 +584,24 @@ body:not(.search-results)  .page .entry-header p {
 
 /* https://cssgradient.io/ */
 .cmc .banner-tile__bg {
-  /*background: rgb(157,11,21);
-  background: linear-gradient(90deg, rgba(157,11,21,1) 0%, rgba(194,14,26,1) 63%, rgba(196,24,36,1) 100%);*/
-  background: rgb(196,24,36);
-  background: linear-gradient(90deg, rgba(196,24,36,1) 0%, rgba(194,14,26,1) 63%, rgba(157,11,21,1) 100%);
+  background: rgb(237,28,36);
+  background: linear-gradient(90deg, rgba(237,28,36,1) 50%, rgba(156,11,23,1) 100%);
 }
 .nonclinical .banner-tile__bg {
-  /*background: rgb(207,102,30);
-background: linear-gradient(90deg, rgba(207,102,30,1) 0%, rgba(168,82,23,1) 100%);*/
-  background: rgb(207,102,30);
-  background: linear-gradient(90deg, rgba(207,102,30,1) 0%, rgba(168,82,23,1) 100%);
+  background: rgb(242,92,25);
+  background: linear-gradient(90deg, rgba(242,92,25,1) 50%, rgba(172,84,25,1) 100%);
 }
 .clinical .banner-tile__bg {
   /*background: rgb(152,152,150);
 background: linear-gradient(90deg, rgba(152,152,150,1) 1%, rgba(121,122,118,1) 100%);*/
-  background: rgb(121,122,118);
-  background: linear-gradient(90deg, rgba(121,122,118,1) 0%, rgba(152,152,150,1) 100%);
+  background: rgb(168,166,166);
+  background: linear-gradient(90deg, rgba(168,166,166,1) 50%, rgba(121,121,120,1) 100%);
 }
 .regulatory .banner-tile__bg {
   /*background: rgb(94,150,189);
 background: linear-gradient(90deg, rgba(94,150,189,1) 0%, rgba(74,121,152,1) 100%);*/
-  background: rgb(74,121,152);
-background: linear-gradient(90deg, rgba(74,121,152,1) 1%, rgba(94,150,189,1) 100%);
+  background: rgb(71,154,195);
+  background: linear-gradient(90deg, rgba(71,154,195,1) 50%, rgba(74,121,154,1) 100%);
 }
 .leadership .banner-tile__bg {
   background: rgb(35,54,55);
@@ -803,9 +799,10 @@ body:not(.home) .entry-content {
   padding-bottom: 20px;
   color: #9f9f9b;
 }
+
 #RCrumbs a {
   color: #9f9f9b;
-}
+} 
 #RCrumbs a:hover {
   color: #575755;
 }
@@ -1036,7 +1033,7 @@ footer#colophon a.nav-link {
 body:not(.error404) #secondary {
   position: relative;
   z-index: 500;
-  margin-top: -14.96rem;
+  margin-top: -14.99rem;
 }
 #secondary section {
   padding: 1.5rem;

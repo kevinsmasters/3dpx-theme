@@ -14,10 +14,13 @@
 
 /* 1440 */
 /* General Styles */
-
+.btn {
+  border-radius: 0;
+}
 .btn-primary {
   background-color: #c20e1a;
   border-color: #c20e1a;
+  color: #fff;
 }
 .btn-secondary {
   background-color: #d0661c;
@@ -96,18 +99,22 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 900;
   font-family: 'Montserrat', sans-serif;
 }
-
 a {
-  /*transition: all .2s ease-in-out;*/
-  color: #d0661c;
+  color: #585857;
 }
 a:hover {
-  color: #183367;
+  color: #d0661c;
   text-decoration: none;
 }
 .header-inner {
   max-width: 1600px;
   margin: 0 auto;
+}
+.entry-content p,
+.entry-content ul,
+.entry-content ol {
+  font-size: 20px;
+  margin-bottom: 35px;
 }
 /* Header Styles */
 header#masthead {
@@ -132,11 +139,12 @@ body:not(.theme-preset-active) #masthead .navbar-nav > li.current_page_item > a
   padding-left: 1.2rem;
   padding-right: 1.2rem;
   font-size: 1rem;
-  height: 71px;
+  height: 76px;
 }
 
 body:not(.theme-preset-active) #masthead .navbar-nav > li > a:hover {
-  font-weight: 900;
+  /* font-weight: 900; */
+  text-shadow: 0 0 0.01px black;
   color: #585857;
   text-transform: uppercase;
   padding-left: 1.2rem;
@@ -150,7 +158,7 @@ body:not(.theme-preset-active) #masthead .navbar-nav > li:last-child > a:hover {
 }
 header#masthead #menu-main-nav,
 header#masthead #menu-our-solutions {
-  margin-top: 10px;
+  margin-top: 18px;
 }
 header#masthead #navs {
   display: flex;
@@ -195,7 +203,8 @@ header#masthead #navs {
   min-width: 20rem;
 }
 .dropdown-menu .dropdown-item:hover {
-  background: #c2c6c9;
+  /*background: #c2c6c9;*/
+  text-shadow: 0 0 0.01px black;
   letter-spacing: 0;
 }
 #masthead #header-nav  {
@@ -269,8 +278,8 @@ body:not(.theme-preset-active) #masthead #header-nav .navbar-nav > li > a:hover 
   background-size: cover !important;
   height: calc(100vw / 2.91);
 }
-body:not(.home) #page-sub-wrap:after,
-body:not(.home) #page-sub-wrap:before {
+body #page-sub-wrap:after,
+#gradientWrap {
   content: " ";
   display: block;
   height: 4px;
@@ -343,7 +352,45 @@ body:not(.theme-preset-active) #page-sub-header p,
   border: none;
   line-height: normal;
 }
-
+/* sticky scroll */
+#page.stuck {
+  padding-top: 116px;
+}
+.stuck #masthead {
+  position: fixed;
+  z-index: 501;
+  width: 100%;
+  top: 0;
+}
+.stuck #gradientWrap {
+  position: fixed;
+  z-index: 501;
+  width: 100%;
+  top: 112px;
+}
+@media(max-width:1290px) {
+  #page.stuck {
+    padding-top: 0;
+  }
+  .stuck #gradientWrap {
+    top: 105px;
+  }
+}
+@media(max-width:1130px) {
+  .stuck #gradientWrap {
+    top: 97px;
+  }
+}
+@media(max-width:960px) {
+  .stuck #gradientWrap {
+    top: 89.2px;
+  }
+}
+@media(max-width:769px) {
+  .stuck #gradientWrap {
+    top: 85.59px;
+  }
+}
 /* service areas */
 #serviceAreas {
   color: #fff;
@@ -369,12 +416,13 @@ body:not(.theme-preset-active) #page-sub-header p,
 }
 #serviceAreas .vce {
   margin-bottom: 20px;
+  font-family: Montserrat, 'sans-serif';
 }
 #cmcServ {
-  background: #ed1c24;
+  background: #c20e1a;
 }
 #cmcServ:hover {
-  background: #ad151a
+  background: #910a13;
 }
 #cmcServ .vce.vce-single-image-wrapper {
   margin-bottom: 10px;
@@ -399,7 +447,7 @@ body:not(.theme-preset-active) #page-sub-header p,
   background: #a8a6a6;
 }
 #clinServ:hover {
-  background: #686666;
+  background: #7a7878;
 }
 #regServ {
   background: #479ac3;
@@ -435,6 +483,7 @@ body:not(.theme-preset-active) #page-sub-header p,
 }
 .pitch-row p {
   margin-top: 20px;
+  font-size: 18px;
 }
 .pitch-row button.vce-button--style-basic.vce-button--style-basic--size-medium,
 .pitch-row a.vce-button {
@@ -477,6 +526,9 @@ body:not(.theme-preset-active) #page-sub-header p,
     "header img"
     "body img"
     "readmore img"; 
+}
+.entry-content #homePosts .wp-show-posts-inner p {
+  font-size: 16px;
 }
 #homePosts .post.hentry {
   margin-bottom: 1rem;
@@ -607,11 +659,11 @@ background: linear-gradient(90deg, rgba(94,150,189,1) 0%, rgba(74,121,152,1) 100
   background: rgb(35,54,55);
   background: linear-gradient(90deg, rgba(35,54,55,1) 0%, rgba(56,72,85,1) 100%);
 }
-.leadership .banner-tile__content {
+/* .leadership .banner-tile__content {
   background-image : url('./assets/images/leadership-header-bg.png');
   background-repeat: no-repeat;
   background-position: 85% 26px;
-}
+} */
 .banner-tile__bg img {
   display: block;
   margin: 0;
@@ -877,7 +929,7 @@ body:not(.home) .page #bodyContent,
   display: grid;
   grid-template-columns: 1fr auto;
   grid-template-rows: 1fr;
-  column-gap: 30px;
+  column-gap: 106px;
   padding-left: 0;
   padding-right: 0;
   max-width: 1600px;

@@ -144,7 +144,7 @@ add_filter( 'get_search_form', 'html5_search_form' );
 function the_breadcrumb()
 {
     $showOnHome = 0; // 1 - show breadcrumbs on the homepage, 0 - don't show
-    $delimiter = '&raquo;'; // delimiter between crumbs
+    $delimiter = '&gt;'; // delimiter between crumbs
     $home = 'Home'; // text for the 'Home' link
     $showCurrent = 1; // 1 - show current post/page title in breadcrumbs, 0 - don't show
     $before = '<span class="current">'; // tag before the current crumb

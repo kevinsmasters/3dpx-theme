@@ -127,6 +127,7 @@
         </div>
         
 	</header><!-- #masthead -->
+    <div id="gradientWrap"></div>
     <?php if(is_front_page() && !get_theme_mod( 'header_banner_visibility' )): ?>
         <div id="page-sub-wrap">
         <?php echo do_shortcode( '[sample-shortcode]' ); ?>

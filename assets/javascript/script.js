@@ -153,6 +153,23 @@ jQuery(function($) {
         }
 
       })
+
+      // sticky menu after scroll down
+      window.onscroll = function() {
+        stickScroll();
+      }
+      function stickScroll(){
+        var scrollFar = $('#xpertBar').height();
+        if(!scrollFar) scrollFar = 0;
+        console.log("your mom: ",scrollFar);
+        var pageDiv = document.getElementById('page');
+        
+        if (window.pageYOffset >= scrollFar) {
+           pageDiv.classList.add("stuck");
+         } else {
+          pageDiv.classList.remove("stuck");
+         }
+       }
     });
 
     // Run the script once the window finishes loading

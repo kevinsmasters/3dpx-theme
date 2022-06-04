@@ -14,7 +14,13 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 
 <aside id="secondary" class="widget-area" role="complementary">
 <?php if(get_post_meta($post->ID, 'page_icon', true)) : ?>
-<img src="<?php echo get_post_meta($post->ID, 'page_icon', true); ?>">
+	<?php 
+		$this_parent_url = get_permalink( $post->post_parent ); 
+		$this_parent_title = get_the_title ( $post->post_parent );
+	?>
+	<a href="<?php echo $this_parent_url; ?>">
+		<img alt="<?php echo $this_parent_title; ?>" src="<?php echo get_post_meta($post->ID, 'page_icon', true); ?>">
+	</a>
 <?php endif; ?>
 
 

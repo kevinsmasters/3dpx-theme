@@ -14,12 +14,12 @@ get_header(); ?>
 
 			<section class="error-404 not-found">
 				<header class="entry-header">
-					<h1 class="page-title"><?php esc_html_e( 'Hmm, something went wrong there.', 'wp-bootstrap-starter' ); ?></h1>
+					<h1 style="color:#c20e1a"><?php esc_html_e( 'Hmm, something went wrong there.', 'wp-bootstrap-starter' ); ?></h1><div class="blockquote">We're sorry but the page or resource you are looking for has moved or ceased to exist on our website.</div>
 				</header><!-- .page-header -->
 			<div id="bodyContent">
 				<div class="entry-content">
-					<p><?php esc_html_e( 'You may find what you are looking for in the menu above.', 'wp-bootstrap-starter' ); ?></p>
-					<p><a class="btn">Go to the homepage</a> <a class="btn">Contact us</a></p>
+					<p><?php esc_html_e( 'You may find what you are looking for in the navigation menu above, by visiting our home page, or searching again.', 'wp-bootstrap-starter' ); ?></p>
+					<p><a class="btn btn-primary" href="/">Go to the homepage</a> <a class="btn btn-secondary" href="/contact-us/">Contact Us</a></p>
 					<?php
 						//get_search_form();
 

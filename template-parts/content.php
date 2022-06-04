@@ -19,9 +19,11 @@
 		endif;
 
 		if ( 'post' === get_post_type() ) : ?>
+		<?php /* ?>
 		<div class="entry-meta">
 			<?php wp_bootstrap_starter_posted_on(); ?>
 		</div><!-- .entry-meta -->
+		<?php */ ?>
 		<?php
 		endif; ?>
 	</header><!-- .entry-header -->

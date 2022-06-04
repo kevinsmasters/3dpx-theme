@@ -31,9 +31,10 @@
     <link rel="profile" href="http://gmpg.org/xfn/11">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">    
-    <?php wp_head(); ?>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">    <?php wp_head(); ?>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet"> 
 <link rel="icon" href="https://3d-pxc.com/wp-content/uploads/2020/06/cropped-3d-pxc_fav-32x32.png" sizes="32x32" />
 <link rel="icon" href="https://3d-pxc.com/wp-content/uploads/2020/06/cropped-3d-pxc_fav-192x192.png" sizes="192x192" />
 <link rel="apple-touch-icon" href="https://3d-pxc.com/wp-content/uploads/2020/06/cropped-3d-pxc_fav-180x180.png" />
@@ -126,10 +127,12 @@
         </div>
         
 	</header><!-- #masthead -->
+    <div id="gradientWrap"></div>
     <?php if(is_front_page() && !get_theme_mod( 'header_banner_visibility' )): ?>
         <div id="page-sub-wrap">
-        <div class="DJ__BannerTile__processed banner-tile tile color-black analytics-container" data-title="Homepage Banner - Hope Changes Lives">
-            <div class="banner-tile__bg">
+        <?php echo do_shortcode( '[sample-shortcode]' ); ?>
+        <? /*<div class="DJ__BannerTile__processed banner-tile tile color-black analytics-container" data-title="Homepage Banner - Hope Changes Lives">
+       <div class="banner-tile__bg">
                 <picture>
                     <source media="(min-width: 1920px)" srcset="">
                     <source media="(min-width: 1281px) and (max-width: 1920px)" 
@@ -139,7 +142,8 @@
                     <img <?php if(has_header_image()) { ?>src="<?php header_image(); ?>" <?php } else { ?>
                         src="https://placeimg.com/1440/710/any" <?php } ?>
                         width="100%" height="auto" alt="Hope Changes Lives">
-                </picture>
+                </picture> 
+                
             </div>
             <div class="grid-container">
                 <div class="grid-x grid-padding-x">
@@ -166,8 +170,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
+            </div> 
+        </div>*/ ?>
 
         </div>
     <?php endif; ?>

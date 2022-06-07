@@ -34,7 +34,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">    <?php wp_head(); ?>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet"> 
 <link rel="icon" href="https://3d-pxc.com/wp-content/uploads/2020/06/cropped-3d-pxc_fav-32x32.png" sizes="32x32" />
 <link rel="icon" href="https://3d-pxc.com/wp-content/uploads/2020/06/cropped-3d-pxc_fav-192x192.png" sizes="192x192" />
 <link rel="apple-touch-icon" href="https://3d-pxc.com/wp-content/uploads/2020/06/cropped-3d-pxc_fav-180x180.png" />

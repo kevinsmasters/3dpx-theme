@@ -47,7 +47,14 @@ if ( !is_front_page() ) : ?>
 		<div class="grid-x grid-padding-x">
 			<div class="cell medium-8 medium-offset-2">
 				<div class="banner-tile__content">
-					<?php the_title( '<h1 class="banner-tile__headline">', '</h1>' ); ?>
+
+					<?php if(get_post_meta($post->ID, 'alternative-title', true)) {
+						echo('<h1 class="banner-tile__headline">'. get_post_meta($post->ID, "alternative-title", true) . '</h1>' );
+					} else {
+						the_title( '<h1 class="banner-tile__headline">', '</h1>' );
+					}
+					?>
+
 					<div class="banner-tile__desc"><?php echo get_post_meta($post->ID, 'hero_text', true); ?></div>
 				</div>
 			</div>

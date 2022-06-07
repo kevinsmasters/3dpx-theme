@@ -25,6 +25,9 @@
 						<?php get_template_part( 'footer-widget' ); ?>
 		</div>
 	</footer><!-- #colophon -->
+	<div id="copyRight">
+		<p>&copy; 3D-PharmXchange <?php echo date("Y"); ?></p>
+	</div>
 <?php endif; ?>
 </div><!-- #page -->
 

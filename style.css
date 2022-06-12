@@ -479,7 +479,7 @@ body:not(.theme-preset-active) #page-sub-header p,
   background: #7a7878;
 }
 #regServ {
-  background: #479ac3;
+  background: #5d96be;
 }
 #regServ:hover {
   background: #2b5d77;
@@ -551,7 +551,7 @@ body:not(.theme-preset-active) #page-sub-header p,
   padding-left: 30px;
   display: grid; 
   grid-template-columns: 1fr 196px; 
-  grid-template-rows: 40px 53px 117px 40px; 
+  grid-template-rows: 45px 53px 112px 40px; 
   gap: 0px 20px; 
   grid-template-areas: 
     "cat img"
@@ -561,6 +561,7 @@ body:not(.theme-preset-active) #page-sub-header p,
 }
 .entry-content #homePosts .wp-show-posts-inner p {
   font-size: 16px;
+  line-height: 26px;
 }
 #homePosts .post.hentry {
   margin-bottom: 1rem;
@@ -599,7 +600,7 @@ body:not(.theme-preset-active) #page-sub-header p,
   padding: 0;
   border: none;
   color: #d0661c;
-  font-size: 14px;
+  font-size: 16px;
   text-transform: uppercase;
   text-decoration: underline;
   font-weight: bold;
@@ -651,7 +652,7 @@ body:not(.search-results)  .page .entry-header p {
   overflow: hidden;
 }
 .banner-tile {
-  min-height: 600px;
+  min-height: 450px;
   position: relative;
 }
 .banner-tile__bg {
@@ -689,7 +690,7 @@ background: linear-gradient(90deg, rgba(94,150,189,1) 0%, rgba(74,121,152,1) 100
 }
 .leadership .banner-tile__bg {
   background: rgb(39,60,76);
-  background: linear-gradient(90deg, rgba(39,60,76,1) 50%, rgba(66,104,133,1) 100%);
+  background: linear-gradient(90deg, rgba(39,60,76,1) 50%, rgba(12,19,24,1) 100%);
 }
 /* .leadership .banner-tile__content {
   background-image : url('./assets/images/leadership-header-bg.png');
@@ -718,6 +719,34 @@ background: linear-gradient(90deg, rgba(94,150,189,1) 0%, rgba(74,121,152,1) 100
   padding-right: 1.25rem;
   max-width: 82.5rem; */
 }
+
+/* about us carousel */
+#aboutUsCarousel .carousel-inner {
+  background-image: url('./assets/images/slide-bg.jpg');
+  background-repeat: no-repeat; 
+}
+#aboutUsCarousel .carousel-caption {
+  top: 0;
+  display: flex!important;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%!important;
+}
+#aboutUsCarousel .carousel-inner .carousel-item img + p,
+.entry-content #aboutUsCarousel p:empty {
+  display: none;
+  height: 0;
+}
+.entry-content #aboutUsCarousel h2 {
+  color: #fff;
+  font-size: 30px!important; /* important-er */
+}
+.entry-content #aboutUsCarousel p.blockquote {
+  color: #fff;
+  font-size: 20px!important;
+  margin-bottom: 0;
+}
+.carousel-control-prev + br { display: none; }
 @media print, screen and (min-width: 80em) {
   .grid-container {
       /* padding-left: 3rem;
@@ -1121,7 +1150,7 @@ footer#colophon a.nav-link {
 body:not(.error404) #secondary {
   position: relative;
   z-index: 500;
-  margin-top: -19.99rem;
+  margin-top: -320px;
 }
 #secondary section {
   padding: 1.5rem;
@@ -1326,6 +1355,10 @@ body:not(.error404) #secondary {
 }
 
 @media (max-width: 896px) {
+  #heroWrapper,
+  #gradientWrap {
+    display: none;
+  }
   body:not(.theme-preset-active) #page-sub-header h1,
   .home #page-sub-wrap .banner-tile__headline {
     font-size: 2.6rem;
@@ -1511,3 +1544,5 @@ body:not(.error404) #secondary {
   }
   
 }
+
+.edit-link a { display: block;}

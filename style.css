@@ -677,14 +677,10 @@ body:not(.search-results)  .page .entry-header p {
   background: linear-gradient(90deg, rgba(242,92,25,1) 50%, rgba(172,84,25,1) 100%);
 }
 .clinical .banner-tile__bg {
-  /*background: rgb(152,152,150);
-background: linear-gradient(90deg, rgba(152,152,150,1) 1%, rgba(121,122,118,1) 100%);*/
   background: rgb(168,166,166);
   background: linear-gradient(90deg, rgba(168,166,166,1) 50%, rgba(121,121,120,1) 100%);
 }
 .regulatory .banner-tile__bg {
-  /*background: rgb(94,150,189);
-background: linear-gradient(90deg, rgba(94,150,189,1) 0%, rgba(74,121,152,1) 100%);*/
   background: rgb(71,154,195);
   background: linear-gradient(90deg, rgba(71,154,195,1) 50%, rgba(74,121,154,1) 100%);
 }
@@ -692,11 +688,7 @@ background: linear-gradient(90deg, rgba(94,150,189,1) 0%, rgba(74,121,152,1) 100
   background: rgb(39,60,76);
   background: linear-gradient(90deg, rgba(39,60,76,1) 50%, rgba(12,19,24,1) 100%);
 }
-/* .leadership .banner-tile__content {
-  background-image : url('./assets/images/leadership-header-bg.png');
-  background-repeat: no-repeat;
-  background-position: 85% 26px;
-} */
+
 .banner-tile__bg img {
   display: block;
   margin: 0;
@@ -706,18 +698,6 @@ background: linear-gradient(90deg, rgba(94,150,189,1) 0%, rgba(74,121,152,1) 100
   object-fit: cover;
   -o-object-position: center;
   object-position: center;
-}
-.grid-container {
-  /* padding-right: 0.625rem;
-  padding-left: 0.625rem;
-  max-width: 76.5rem;
-  margin-left: auto;
-  margin-right: auto; */
-}
-.grid-container {
-  /* padding-left: 1.25rem;
-  padding-right: 1.25rem;
-  max-width: 82.5rem; */
 }
 
 /* about us carousel */
@@ -747,24 +727,7 @@ background: linear-gradient(90deg, rgba(94,150,189,1) 0%, rgba(74,121,152,1) 100
   margin-bottom: 0;
 }
 .carousel-control-prev + br { display: none; }
-@media print, screen and (min-width: 80em) {
-  .grid-container {
-      /* padding-left: 3rem;
-      padding-right: 3rem; */
-  }
-}
-@media print, screen and (min-width: 45em){
-  .grid-container {
-      /* padding-right: 0.75rem;
-      padding-left: 0.75rem; */
-  }
-}
-@media print, screen and (min-width: 45em) {
-  .grid-container {
-    /* padding-left: 1.75rem;
-    padding-right: 1.75rem; */
-  }
-}
+
 .grid-x, .product-list-search-form [data-drupal-selector="edit-filters-wrapper"] {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -774,27 +737,7 @@ background: linear-gradient(90deg, rgba(94,150,189,1) 0%, rgba(74,121,152,1) 100
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
 }
-.grid-container:not(.full)>.grid-padding-x, 
-.product-list-search-form .grid-container:not(.full)>[data-drupal-selector="edit-filters-wrapper"] {
-  /* margin-right: -0.625rem;
-  margin-left: -0.625rem; */
-}
-@media print, screen and (min-width: 45em){
-  .grid-container:not(.full)>.grid-padding-x, 
-  .product-list-search-form .grid-container:not(.full)>[data-drupal-selector="edit-filters-wrapper"] {
-    /* margin-right: -0.75rem;
-    margin-left: -0.75rem; */
-  }
-}
-.grid-padding-x>.cell, 
-.product-list-search-form [data-drupal-selector="edit-filters-wrapper"]>.cell, 
-.product-list-search-form .grid-padding-x>.fieldgroup, 
-.product-list-search-form [data-drupal-selector="edit-filters-wrapper"]>.fieldgroup, 
-.product-list-search-form .grid-padding-x>[data-drupal-selector="edit-link"], 
-.product-list-search-form [data-drupal-selector="edit-filters-wrapper"]>[data-drupal-selector="edit-link"] {
-  /* padding-right: 0.625rem;
-  padding-left: 0.625rem; */
-}
+
 .cell, .product-list-search-form .fieldgroup, .product-list-search-form [data-drupal-selector="edit-link"] {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 auto;
@@ -803,23 +746,7 @@ background: linear-gradient(90deg, rgba(94,150,189,1) 0%, rgba(74,121,152,1) 100
   min-width: 0;
   width: 100%;
 }
-@media print, screen and (min-width: 45em){
-  .grid-padding-x>.cell, 
-  .product-list-search-form [data-drupal-selector="edit-filters-wrapper"]>.cell, 
-  .product-list-search-form .grid-padding-x>.fieldgroup, 
-  .product-list-search-form [data-drupal-selector="edit-filters-wrapper"]>.fieldgroup, 
-  .product-list-search-form .grid-padding-x>[data-drupal-selector="edit-link"], 
-  .product-list-search-form [data-drupal-selector="edit-filters-wrapper"]>[data-drupal-selector="edit-link"] {
-      /* padding-right: 0.75rem;
-      padding-left: 0.75rem; */
-  }
-}
-@media print, screen and (min-width: 45em){
-  .grid-x>.medium-8, 
-  .product-list-search-form [data-drupal-selector="edit-filters-wrapper"]>.medium-8 {
-    /* width: 66.66667%; */
-  }
-}
+
 @media print, screen and (min-width: 45em){
 .grid-x>.medium-shrink, .product-list-search-form [data-drupal-selector="edit-filters-wrapper"]>.medium-shrink, .grid-x>.medium-full, .product-list-search-form [data-drupal-selector="edit-filters-wrapper"]>.medium-full, .grid-x>.medium-1, .product-list-search-form [data-drupal-selector="edit-filters-wrapper"]>.medium-1, .grid-x>.medium-2, .product-list-search-form [data-drupal-selector="edit-filters-wrapper"]>.medium-2, .grid-x>.medium-3, .product-list-search-form [data-drupal-selector="edit-filters-wrapper"]>.medium-3, .grid-x>.medium-4, .product-list-search-form [data-drupal-selector="edit-filters-wrapper"]>.medium-4, .grid-x>.medium-5, .product-list-search-form [data-drupal-selector="edit-filters-wrapper"]>.medium-5, .grid-x>.medium-6, .product-list-search-form [data-drupal-selector="edit-filters-wrapper"]>.medium-6, .product-list-search-form .grid-x>.fieldgroup, .product-list-search-form [data-drupal-selector="edit-filters-wrapper"]>.fieldgroup, .grid-x>.medium-7, .product-list-search-form [data-drupal-selector="edit-filters-wrapper"]>.medium-7, .grid-x>.medium-8, .product-list-search-form [data-drupal-selector="edit-filters-wrapper"]>.medium-8, .grid-x>.medium-9, .product-list-search-form [data-drupal-selector="edit-filters-wrapper"]>.medium-9, .grid-x>.medium-10, .product-list-search-form [data-drupal-selector="edit-filters-wrapper"]>.medium-10, .grid-x>.medium-11, .product-list-search-form [data-drupal-selector="edit-filters-wrapper"]>.medium-11, .grid-x>.medium-12, .product-list-search-form [data-drupal-selector="edit-filters-wrapper"]>.medium-12 {
     -ms-flex-preferred-size: auto;
@@ -831,19 +758,18 @@ background: linear-gradient(90deg, rgba(94,150,189,1) 0%, rgba(74,121,152,1) 100
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
 }}
-@media print, screen and (min-width: 45em){
-.medium-offset-2 {
-    /* margin-left: 120px; */
-}}
+
 @media print, screen and (min-width: 80em){
 .banner-tile__content {
     padding: 8.125rem 0;
     min-height: 44.375rem;
 }}
+
 @media print, screen and (min-width: 45em){
 .banner-tile__content {
     padding: 7.5rem 0;
 }}
+
 .banner-tile__content {
   padding: 85px 0;
   min-height: 21.1rem;
